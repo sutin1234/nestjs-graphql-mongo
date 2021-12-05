@@ -1,17 +1,16 @@
-import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { BookService } from './book.service';
-import { BookDto } from './dto/book.dto';
-import {
-  BookInput,
-  CriteriaBookInput,
-  IdBookInput,
-  UpdateBookInput,
-} from './input/book.input';
+import { Args, Mutation, Query, Resolver } from "@nestjs/graphql";
+import { BookService } from "./book.service";
+import { BookDto } from "./dto/book.dto";
+import { BookInput, CriteriaBookInput, IdBookInput, UpdateBookInput } from "./input/book.input";
+import { UseGuards } from "@nestjs/common";
+import { AuthGuard } from "../auth/auth.guard";
 
-@Resolver()
+@Resolver("Book")
 export class BookResolver {
-  constructor(private bookService: BookService) {}
+  constructor(private bookService: BookService) {
+  }
 
+  @UseGuards(new AuthGuard())
   @Query(() => [BookDto])
   async getBooks() {
     return this.bookService.findAll();
