@@ -1,14 +1,21 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
+See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [0.0.3](https://github.com/sutin1234/nestjs-graphql-mongo/compare/v0.0.2...v0.0.3) (2021-12-06)
 
-### 0.0.1 (2021-12-06)
+### ⚠ BREAKING CHANGES
 
-- added initialized nestjs project
-- added connect mongodb
-- added define schema for mongodb
+- no
+
+### Features
+
+- no
+
+### Bug Fixes
+
+- added standard version
 
 ### 0.0.2 (2021-12-06)
 
@@ -26,3 +33,9 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 - no
+
+### 0.0.1 (2021-12-06)
+
+- added initialized nestjs project
+- added connect mongodb
+- added define schema for mongodb
