@@ -1,8 +1,8 @@
 {
   "name": "nest-graphql",
   "version": "0.0.3",
-  "description": "",
-  "author": "",
+  "description": "Build Nest with graphQL",
+  "author": "sutin1234",
   "private": true,
   "license": "MIT LICENSED",
   "scripts": {
