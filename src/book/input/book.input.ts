@@ -1,17 +1,20 @@
-import { Field, InputType } from '@nestjs/graphql';
+import { Field, InputType } from "@nestjs/graphql";
 
 @InputType()
 export class BookInput {
-  @Field()
+  @Field({
+    description: "title of book",
+    deprecationReason: "using ib V2 only"
+  })
   readonly title: string;
 
-  @Field()
+  @Field({ description: "author of book" })
   readonly author: string;
 }
 
 @InputType()
 export class IdBookInput {
-  @Field()
+  @Field({ description: "_id ios unique id of book" })
   readonly _id: string;
 }
 
